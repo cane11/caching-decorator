@@ -157,13 +157,12 @@ def cached(
             if os.path.isfile(success_token_filename):
                 if not os.path.isfile(filename):
                     raise Exception(
-                        "Success token is present but file is missing!: "
-                        f"{filename}"
+                        "Success token is present but file is missing!: " f"{filename}"
                     )
                 with open(filename, "rb") as f:
                     try:
                         return pickle.load(f)
-                    except:
+                    except TypeError:
                         raise Exception(
                             "Corrupt cache file due to unpickling error, even "
                             f"though success token was present!: {filename}"
