@@ -1,6 +1,6 @@
 """Matplotlib science style"""
 
-from .caching import set_cache_dir, set_use_hash, cached, set_log_level
+from .caching import cached, set_cache_dir, set_log_level, set_use_hash
 
 # https://github.com/python-poetry/poetry/pull/2366#issuecomment-652418094
 # https://github.com/python-poetry/poetry/issues/144#issuecomment-623927302
