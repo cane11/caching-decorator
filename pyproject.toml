@@ -20,7 +20,7 @@ homepage = "https://github.com/yoseflab/caching-decorator"
 license = "MIT"
 name = "caching-decorator"
 packages = [
-  {include = "caching-decorator"},
+  {include = "caching"},
 ]
 readme = "README.md"
 version = "0.0.1"
